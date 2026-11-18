@@ -1,0 +1,21 @@
+{
+  "name": "d1-memory",
+  "version": "0.1.0",
+  "description": "Long-term memory for AI agents on Cloudflare D1 and Vectorize, with hybrid search",
+  "license": "MIT",
+  "author": "Arka Garai",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "files": ["src"],
+  "repository": { "type": "git", "url": "git+https://github.com/arka6fx/d1-memory.git" },
+  "keywords": ["ai-agents", "memory", "cloudflare-workers", "d1", "vectorize", "rag"],
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test 'test/*.test.ts'",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

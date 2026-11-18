@@ -1,0 +1,6 @@
+export { MAX_MEMORY_CHARS, createMemory, ftsQuery } from "./memory.ts"
+export type { MemoryOptions, RememberInput } from "./memory.ts"
+export { rrf } from "./rrf.ts"
+export { workersAiEmbed } from "./embed.ts"
+export type { AiLike } from "./embed.ts"
+export type { D1Like, D1Statement, Embed, Memory, MemorySource, Recalled, VectorIndex } from "./types.ts"

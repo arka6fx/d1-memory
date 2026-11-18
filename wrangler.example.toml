@@ -1,0 +1,20 @@
+# Copy to wrangler.toml and fill in your own ids.
+name = "memory-example"
+main = "examples/worker.ts"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "memory"
+database_id = "<your-d1-database-id>"
+migrations_dir = "migrations"
+
+[[vectorize]]
+binding = "MEMORY_INDEX"
+index_name = "memory"
+
+[ai]
+binding = "AI"
+
+[triggers]
+crons = ["*/10 * * * *"]
